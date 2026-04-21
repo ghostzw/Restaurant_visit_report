@@ -227,11 +227,11 @@
       <div
         id="top-bar-wrapper"
         style="width: 750px; display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
-        <!-- 状态栏行：高度 = env(safe-area-inset-top)，浏览器/微信内嵌时为0自动消失，PWA全屏时自动撑开 -->
+        <!-- 状态栏行：微信WebView强制0，其他环境使用safe-area-inset-top -->
         <div
           id="status-bar-row"
           style="width: 750px; height: env(safe-area-inset-top, 0px); flex: none; mix-blend-mode: pass-through; position: relative; overflow: hidden">
-          <!-- 图标内容隐藏，仅用高度占位，系统真实状态栏显示在上方 -->
+          <!-- 仅用高度占位，系统真实状态栏显示在上方 -->
         </div>
         <!-- 导航栏行：过程稿在右侧 -->
         <div
@@ -261,6 +261,16 @@
           </div>
         </div>
       </div>
+      <script>
+        (function() {
+          var statusRow = document.getElementById('status-bar-row');
+          // 微信WebView检测：UA含MicroMessenger则直接高度=0，消除微信异常safe-area值
+          if (/MicroMessenger/i.test(navigator.userAgent)) {
+            statusRow.style.height = '0';
+          }
+          // 其他环境保持CSS env(safe-area-inset-top, 0px)，无需额外处理
+        })();
+      </script>
       <div
         style="width: 288px; height: 95px; flex: none; position: absolute; left: 24px; top: 492px; mix-blend-mode: pass-through">
         <span
