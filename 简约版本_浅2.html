@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Document</title>
     <style>
       *,*::before,*::after { box-sizing: border-box }
@@ -227,24 +227,13 @@
       <div
         id="top-bar-wrapper"
         style="width: 750px; display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
-        <!-- 状态栏行：仅在全屏/WebView环境下显示，浏览器内自动隐藏 -->
+        <!-- 状态栏行：高度 = env(safe-area-inset-top)，浏览器/微信内嵌时为0自动消失，PWA全屏时自动撑开 -->
         <div
           id="status-bar-row"
-          style="width: 750px; height: 88px; flex: none; mix-blend-mode: pass-through; position: relative; overflow: hidden">
-          <!-- 信号/WiFi/电量图标：保留占位高度，内容由JS控制显示/隐藏 -->
-          <div id="status-bar-icons">
-            <div style="position: absolute; left: 672px; top: 34.67px">
-              <img src="./asset/icons/svg_1b0a3d08.svg" />
-            </div>
-            <div style="position: absolute; left: 631.39px; top: 34.66px">
-              <img src="./asset/icons/svg_7c71d434.svg" />
-            </div>
-            <div style="position: absolute; left: 587.33px; top: 35.33px">
-              <img src="./asset/icons/svg_553165db.svg" />
-            </div>
-          </div>
+          style="width: 750px; height: env(safe-area-inset-top, 0px); flex: none; mix-blend-mode: pass-through; position: relative; overflow: hidden">
+          <!-- 图标内容隐藏，仅用高度占位，系统真实状态栏显示在上方 -->
         </div>
-        <!-- 导航栏行：过程稿移至此行右侧 -->
+        <!-- 导航栏行：过程稿在右侧 -->
         <div
           style="width: 750px; height: 88px; display: flex; flex: none; justify-content: space-between; align-items: center; padding-right: 32px; padding-left: 32px; overflow: hidden; mix-blend-mode: pass-through">
           <div
@@ -272,36 +261,6 @@
           </div>
         </div>
       </div>
-      <script>
-        (function() {
-          var statusRow = document.getElementById('status-bar-row');
-          var statusIcons = document.getElementById('status-bar-icons');
-          function adapt() {
-            // outerHeight - innerHeight 差值大于 60px，说明浏览器有顶部 UI（地址栏等）
-            // 此时隐藏整个状态栏行（高度收起）
-            var browserBarHeight = window.outerHeight - window.innerHeight;
-            if (browserBarHeight > 60) {
-              // 有浏览器顶部栏：隐藏状态栏行，高度收起
-              statusRow.style.height = '0';
-              statusRow.style.overflow = 'hidden';
-            } else {
-              // 全屏/WebView：保留高度，但隐藏假的信号/电量图标
-              statusRow.style.height = '88px';
-              statusIcons.style.visibility = 'hidden';
-            }
-          }
-          // DOMContentLoaded 时执行一次
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', adapt);
-          } else {
-            adapt();
-          }
-          // load 后再执行一次（图片加载完高度更准确）
-          window.addEventListener('load', adapt);
-          // 横竖屏切换、浏览器地址栏收缩时重新判断
-          window.addEventListener('resize', adapt);
-        })();
-      </script>
       <div
         style="width: 288px; height: 95px; flex: none; position: absolute; left: 24px; top: 492px; mix-blend-mode: pass-through">
         <span
