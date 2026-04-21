@@ -5,84 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* 方正兰亭黑字体引入 */
-      @font-face {
-        font-family: 'FZLanTingHeiS-H-GB';
-        src: url('./asset/fonts/FZLTTHJW.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'FZLanTingHeiS-EB-GB';
-        src: url('./asset/fonts/FZLTZHJW.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'FZLanTingHeiS-DB-GB';
-        src: url('./asset/fonts/FZLTDHJW.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'FZLanTingHeiS-L-GB';
-        src: url('./asset/fonts/FZLTCHJW.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'FZLanTingHeiS-Xi-GB';
-        src: url('./asset/fonts/FZLTXIHJW.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Allura';
-        src: url('./asset/fonts/Allura-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Yozai';
-        src: url('./asset/fonts/Yozai-Light.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-
       *,*::before,*::after { box-sizing: border-box }
       body { padding: 0; margin: 0 }
       p { margin: 0 }
-      html, body {
-        background: #EDE9E6;
-        margin: 0;
-        padding: 0;
-        /* 允许页面到顶/底时继续上下拖拽，产生原生弹性回弹 */
-        overscroll-behavior-y: auto;
-      }
-      /* 外层容器：撑满屏幕宽度，移动端自适应 */
-      #mobile-wrapper {
-        width: 100vw;
-        max-width: 750px;   /* 在平板/PC 上不超过设计稿宽度 */
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
-        background: #EDE9E6;
-      }
-      /* 内容层：750px 设计稿，scale 由 JS 动态计算 */
-      #main-content {
-        transform-origin: top left;
-        width: 750px !important;
-      }
     </style>
   </head>
   <body>
-    <div id="mobile-wrapper">
-    <div id="main-content"
-      style="background: #EDE9E6; mix-blend-mode: pass-through; position: relative; width: 750px">
+    <div
+      style="background: #EDE9E6; overflow: hidden; mix-blend-mode: pass-through; position: relative">
       <div
         style="width: 750px; height: 1119px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
         <img
-          src="./asset/images/牛肉烧麦主图.png"
+          src="./asset/images/d9960579850a90381e90fe486a630133.png"
           title="image"
           style="flex: none; position: absolute; left: 0px; top: 0px; width: 749px; height: 1116px; object-fit: cover; mix-blend-mode: pass-through" />
         <div
@@ -91,7 +25,7 @@
       <div
         style="width: 758px; height: 459px; flex: none; position: absolute; left: -1px; top: 2545px; mix-blend-mode: pass-through">
         <img
-          src="./asset/images/牛肉烧麦主图.png"
+          src="./asset/images/e938e2ebefb7eb156ffabe8bae8ce98c.png"
           title="image"
           style="flex: none; position: absolute; left: 8px; top: 105px; width: 750px; height: 320px; object-fit: cover; mix-blend-mode: pass-through" />
         <div
@@ -100,11 +34,8 @@
       <div style="position: absolute; left: 0px; top: 982px">
         <img src="./asset/icons/svg_a1ef8113.svg" />
       </div>
-      <!-- 大家怎么吃横向滑动区域 -->
-      <div id="slider-b" style="position: absolute; left: 0px; top: 1324px; width: 750px; height: 680px; overflow: hidden; touch-action: pan-y; cursor: grab;">
-        <div id="slider-b-track" style="display: flex; gap: 24px; padding: 0 24px; height: 680px; will-change: transform; transition: transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);">
       <div
-        style="width: 688px; height: 680px; flex: none; flex-shrink: 0; position: relative; mix-blend-mode: pass-through">
+        style="width: 688px; height: 680px; flex: none; position: absolute; left: 736px; top: 1324px; mix-blend-mode: pass-through">
         <div style="position: absolute; left: 0px; top: 0px">
           <img src="./asset/icons/svg_595fee38.svg" />
         </div>
@@ -122,15 +53,15 @@
           </div>
         </div>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/胡杨焖饼小图.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 0px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/901a920006db92cfd65783f69ca9f747.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 0px; top: 452px; mix-blend-mode: pass-through"></div>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/酿皮.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 228px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/335193da4cab0bb76ffc9d8e8b85bb63.jpg); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 228px; top: 452px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 240px); top: 567px; mix-blend-mode: pass-through">
           特色酿皮
         </span>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/现烤肉串小图.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 456px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/34bf95d9417fdf12c32f9fccb58be8b6.jpg); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 456px; top: 452px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 468px); top: 567px; mix-blend-mode: pass-through">
           现烤肉串
@@ -143,7 +74,7 @@
           胡杨焖饼
         </span>
         <div
-          style="width: 440px; height: 440px; flex: none; background: url(./asset/images/牛肉烧麦主图.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
+          style="width: 440px; height: 440px; flex: none; background: linear-gradient(360deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/91a1670352ef44510da3fd665f6078e2.jpeg); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 12px); top: 389px; mix-blend-mode: pass-through">
           牛肉烧麦
@@ -168,7 +99,7 @@
           </span>
         </p>
         <p
-          style="width: 200px; flex: none; color: #1D0C05; font-size: 32px; font-family: PingFang SC; font-weight: 500; line-height: 48px; position: absolute; left: calc(100% - 688px + 464px); top: 24px; mix-blend-mode: pass-through">
+          style="width: 200px; flex: none; color: #1D0C05; font-size: 32px; font-family: PingFang SC; font-weight: 600; line-height: 48px; position: absolute; left: calc(100% - 688px + 464px); top: 24px; mix-blend-mode: pass-through">
           老饕这么搭更解腻！
         </p>
         <div
@@ -178,18 +109,18 @@
             <div
               style="width: 32px; height: 32px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
               <img
-                src="./asset/images/Mask备份 10@2x.png"
+                src="./asset/images/bc99d0926c0937b017c6a74e357ae326.png"
                 title="Mask备份 10"
                 style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1px; border-radius: 53px; position: absolute; left: 0px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
             </div>
             <img
-              src="./asset/images/Mask备份 11@2x.png"
+              src="./asset/images/ce9dd2ca2b6940e16d7f6651a7b788d3.png"
               title="Mask备份 11"
               style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1px; border-radius: 27.43px; position: absolute; left: 16px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
             <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
-            style="flex: none; border-radius: 53px; position: absolute; left: 32px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
+              src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+              title="Mask备份 12"
+              style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1px; border-radius: 53px; position: absolute; left: 32px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
           </div>
           <span
             style="color: #111111; font-size: 24px; font-family: PingFang SC; line-height: 34px; opacity: 0.4; position: absolute; left: 68px; top: 0px; mix-blend-mode: pass-through">
@@ -198,7 +129,7 @@ title="Mask备份 12"
         </div>
       </div>
       <div
-        style="width: 688px; height: 680px; flex: none; flex-shrink: 0; position: relative; mix-blend-mode: pass-through">
+        style="width: 688px; height: 680px; flex: none; position: absolute; left: 24px; top: 1324px; mix-blend-mode: pass-through">
         <div style="position: absolute; left: 0px; top: 0px">
           <img src="./asset/icons/svg_595fee38.svg" />
         </div>
@@ -223,15 +154,15 @@ title="Mask备份 12"
           </div>
         </div>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/胡杨焖饼小图.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 0px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/901a920006db92cfd65783f69ca9f747.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 0px; top: 452px; mix-blend-mode: pass-through"></div>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/酿皮.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 228px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/335193da4cab0bb76ffc9d8e8b85bb63.jpg); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 228px; top: 452px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 240px); top: 567px; mix-blend-mode: pass-through">
           特色酿皮
         </span>
         <div
-          style="width: 216px; height: 162px; flex: none; background: url(./asset/images/现烤肉串小图.png); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 456px; top: 452px; mix-blend-mode: pass-through"></div>
+          style="width: 216px; height: 162px; flex: none; background: linear-gradient(0deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/34bf95d9417fdf12c32f9fccb58be8b6.jpg); background-size: cover; background-position: center; border-radius: 16px; position: absolute; left: 456px; top: 452px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 468px); top: 567px; mix-blend-mode: pass-through">
           现烤肉串
@@ -244,7 +175,7 @@ title="Mask备份 12"
           胡杨焖饼
         </span>
         <div
-          style="width: 440px; height: 440px; flex: none; background: url(./asset/images/牛肉烧麦主图.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
+          style="width: 440px; height: 440px; flex: none; background: linear-gradient(360deg, rgba(0,0,0,0.77) 0%, rgba(0,0,0,0) 100%), url(./asset/images/91a1670352ef44510da3fd665f6078e2.jpeg); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
         <span
           style="color: #FFFFFF; font-size: 28px; font-family: PingFang SC; font-weight: 600; line-height: 39px; position: absolute; left: calc(100% - 688px + 12px); top: 389px; mix-blend-mode: pass-through">
           牛肉烧麦
@@ -269,22 +200,22 @@ title="Mask备份 12"
           </span>
         </p>
         <p
-          style="width: 200px; flex: none; color: #1D0C05; font-size: 32px; font-family: PingFang SC; font-weight: 500; line-height: 48px; position: absolute; left: calc(100% - 688px + 464px); top: 24px; mix-blend-mode: pass-through">
+          style="width: 200px; flex: none; color: #1D0C05; font-size: 32px; font-family: PingFang SC; font-weight: 600; line-height: 48px; position: absolute; left: calc(100% - 688px + 464px); top: 24px; mix-blend-mode: pass-through">
           老饕这么搭更解腻！
         </p>
         <div
           style="width: 154px; height: 79px; flex: none; position: absolute; left: 464px; top: 349px; mix-blend-mode: pass-through">
           <img
-src="./asset/images/Mask备份 10@2x.png"
-title="Mask备份 10"
+            src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+            title="Mask备份 10"
             style="flex: none; border-radius: 66.41px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 11@2x.png"
-title="Mask备份 11"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 11"
             style="flex: none; border-radius: 34.37px; position: absolute; left: 28px; top: 0px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 12"
             style="flex: none; border-radius: 34.37px; position: absolute; left: 56px; top: 0px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <span
             style="color: #40160A; font-size: 24px; font-family: PingFang SC; line-height: 34px; opacity: 0.7; position: absolute; left: 0px; top: 45px; mix-blend-mode: pass-through">
@@ -292,8 +223,6 @@ title="Mask备份 12"
           </span>
         </div>
       </div>
-        </div><!-- end slider-b-track -->
-      </div><!-- end slider-b -->
       <div
         style="width: 750px; height: 176px; display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
         <div
@@ -308,11 +237,11 @@ title="Mask备份 12"
             <img src="./asset/icons/svg_553165db.svg" />
           </div>
           <div
-style="display: inline-flex; justify-content: center; align-items: center; padding-top: 8px; padding-bottom: 8px; padding-right: 16px; padding-left: 16px; background: rgba(0,0,0,0.3); border-style: solid; border-color: rgba(255,255,255,0.2); border-width: 1px; border-radius: 100px; position: absolute; left: 44px; top: 22px; mix-blend-mode: pass-through; white-space: nowrap">
-<p
-style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: center; font-weight: 500; mix-blend-mode: pass-through; white-space: nowrap">
-过程稿
-</p>
+            style="width: 104px; height: 48px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; gap: 10px; padding-top: 8px; padding-bottom: 8px; padding-right: 16px; padding-left: 16px; background: rgba(0,0,0,0.3); border-style: solid; border-color: rgba(255,255,255,0.2); border-width: 1px; border-radius: 100px; position: absolute; left: 44px; top: 22px; mix-blend-mode: pass-through">
+            <p
+              style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: center; font-weight: 500; mix-blend-mode: pass-through">
+              过程稿
+            </p>
           </div>
         </div>
         <div
@@ -333,47 +262,47 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
         </div>
       </div>
       <div
-        style="flex: none; position: absolute; left: 24px; top: 492px; mix-blend-mode: pass-through">
+        style="width: 288px; height: 95px; flex: none; position: absolute; left: 24px; top: 492px; mix-blend-mode: pass-through">
         <span
-          style="display: block; color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; mix-blend-mode: pass-through">
-          Core Impression
-        </span>
-        <span
-          style="display: block; color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-H-GB; line-height: 67px; mix-blend-mode: pass-through">
+          style="color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-EB-GB; line-height: 67px; position: absolute; left: calc(100% - 288px + 0px); top: 37px; mix-blend-mode: pass-through">
           餐厅核心印象
         </span>
+        <span
+          style="color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
+          Core Impression
+        </span>
       </div>
       <div
-        style="flex: none; position: absolute; left: 24px; top: 1213px; mix-blend-mode: pass-through">
+        style="width: 240px; height: 95px; flex: none; position: absolute; left: 24px; top: 1213px; mix-blend-mode: pass-through">
         <span
-          style="display: block; color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; mix-blend-mode: pass-through">
-          Recommended dishes
-        </span>
-        <span
-          style="display: block; color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-H-GB; line-height: 67px; mix-blend-mode: pass-through">
+          style="color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-EB-GB; line-height: 67px; position: absolute; left: calc(100% - 240px + 0px); top: 37px; mix-blend-mode: pass-through">
           大家怎么吃
         </span>
+        <span
+          style="color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
+          Recommended dishes
+        </span>
       </div>
       <div
-        style="flex: none; position: absolute; left: 24px; top: 2036px; mix-blend-mode: pass-through">
+        style="width: 277px; height: 95px; flex: none; position: absolute; left: 24px; top: 2036px; mix-blend-mode: pass-through">
         <span
-          style="display: block; color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; mix-blend-mode: pass-through">
-          Services and Environment
-        </span>
-        <span
-          style="display: block; color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-H-GB; line-height: 67px; mix-blend-mode: pass-through">
+          style="color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-EB-GB; line-height: 67px; position: absolute; left: calc(100% - 277px + 0px); top: 37px; mix-blend-mode: pass-through">
           服务与环境
         </span>
+        <span
+          style="color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
+          Services and Environment
+        </span>
       </div>
       <div
-        style="flex: none; position: absolute; left: 34px; top: 2806px; mix-blend-mode: pass-through">
+        style="width: 192px; height: 95px; flex: none; position: absolute; left: 34px; top: 2806px; mix-blend-mode: pass-through">
         <span
-          style="display: block; color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; mix-blend-mode: pass-through">
-          More guides
+          style="color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-EB-GB; line-height: 67px; position: absolute; left: calc(100% - 192px + 0px); top: 37px; mix-blend-mode: pass-through">
+          更多攻略
         </span>
         <span
-          style="display: block; color: #1D0C00; font-size: 48px; font-family: FZLanTingHeiS-H-GB; line-height: 67px; mix-blend-mode: pass-through">
-          更多攻略
+          style="color: #FF6600; font-size: 32px; font-family: Allura; line-height: 45px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
+          More guides
         </span>
       </div>
       <div
@@ -398,7 +327,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
               <div
                 style="width: 204px; height: 306px; flex: none; position: absolute; left: 0px; top: 68px; mix-blend-mode: pass-through">
                 <img
-                  src="./asset/images/4人点餐攻略配图.png"
+                  src="./asset/images/588b50a3228112c5375cffd05fdb076b.png"
                   title="image"
                   style="flex: none; position: absolute; left: 0px; top: 0px; width: 204px; height: 306px; object-fit: cover; mix-blend-mode: pass-through" />
               </div>
@@ -433,7 +362,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
                 店门口车位较少，可停车到沙洲乐园东门停车场
               </p>
               <div
-                style="width: 291px; height: 72px; display: flex; flex: none; justify-content: center; align-items: center; flex-direction: column; padding-top: 19px; padding-bottom: 19px; background: linear-gradient(107deg, #FF4000 0%, #FF6600 100%); border-radius: 36px; position: absolute; left: 0px; top: 125px; mix-blend-mode: pass-through">
+                style="width: 291px; height: 72px; display: flex; flex: none; justify-content: center; align-items: center; flex-direction: column; padding-top: 19px; padding-bottom: 19px; padding-right: 108px; padding-left: 108px; background: linear-gradient(107deg, #FF4000 0%, #FF6600 100%); border-radius: 36px; position: absolute; left: 0px; top: 125px; mix-blend-mode: pass-through">
                 <span
                   style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; font-weight: 600; line-height: 34px; mix-blend-mode: pass-through">
                   导航前往
@@ -442,7 +371,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
             </div>
           </div>
           <div
-            style="width: 339px; height: 328px; flex: none; background: #FFFFFF; border-radius: 24px; overflow: hidden; mix-blend-mode: pass-through; position: relative">
+            style="width: 339px; height: 328px; flex: none; background: #FFFFFF; border-style: solid; border-image: radial-gradient(76.14% 79.24% at 50% 50%, rgba(255,233,210,0) 0,rgba(255,233,210,0) 60.32%,#FFE9D2 100%) 1 1 1 1, linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%); border-width: 1px; border-radius: 24px; overflow: hidden; mix-blend-mode: pass-through; position: relative">
             <div
               style="width: 150px; height: 34px; display: flex; justify-content: flex-start; align-items: center; gap: 8px; position: absolute; left: 24px; top: 32px; mix-blend-mode: pass-through">
               <img
@@ -479,7 +408,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
         <div
           style="display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; gap: 24px; mix-blend-mode: pass-through">
           <div
-            style="width: 339px; height: 389px; flex: none; background: #FFFFFF; border-radius: 24px; overflow: hidden; mix-blend-mode: pass-through; position: relative">
+            style="width: 339px; height: 389px; flex: none; background: #FFFFFF; border-image: radial-gradient(76.14% 79.24% at 50% 50%, rgba(255,233,210,0) 0,rgba(255,233,210,0) 60.32%,#FFE9D2 100%) 1 1 1 1; border-radius: 24px; overflow: hidden; mix-blend-mode: pass-through; position: relative">
             <div
               style="width: 291px; height: 333px; flex: none; position: absolute; left: 24px; top: 32px; mix-blend-mode: pass-through">
               <div
@@ -533,11 +462,11 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
               </span>
             </div>
             <div
-              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/拍照指南图1.png); background-size: cover; background-position: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px; position: absolute; left: 24px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
+              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/c89714be1c2da515425b140ecaa6c61b.png); background-size: cover; background-position: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px; position: absolute; left: 24px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
             <div
-              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/拍照指南图2.png); background-size: cover; background-position: center; position: absolute; left: 122px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
+              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/0a4cccdaaba95d869867ee0abd8e06b0.png); background-size: cover; background-position: center; position: absolute; left: 122px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
             <div
-              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/拍照指南图3.png); background-size: cover; background-position: center; border-top-right-radius: 16px; border-bottom-right-radius: 16px; position: absolute; left: 220px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
+              style="width: 96px; height: 248px; flex: none; background: url(./asset/images/8236491c84bf0f618cf98f4343766594.png); background-size: cover; background-position: center; border-top-right-radius: 16px; border-bottom-right-radius: 16px; position: absolute; left: 220px; top: 133px; overflow: hidden; mix-blend-mode: pass-through"></div>
             <span
               style="color: #111111; font-size: 24px; font-family: PingFang SC; line-height: 40px; opacity: 0.5; position: absolute; left: calc(100% - 339px + 24px); top: 78px; mix-blend-mode: pass-through">
               出片机位推荐
@@ -560,7 +489,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
             <div
               style="width: 480px; height: 365px; flex: none; opacity: 0.3; position: absolute; left: 0px; top: -56px; mix-blend-mode: pass-through">
               <img
-                src="./asset/images/饭后自驾游玩攻略配图.png"
+                src="./asset/images/dadf27bce5b1321756c893215b3ca4b8.png"
                 title="image"
                 style="flex: none; position: absolute; right: 136px; top: 53px; width: 359px; height: 466px; object-fit: cover; mix-blend-mode: pass-through" />
             </div>
@@ -655,7 +584,7 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
           <div
             style="width: 589px; height: 235px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
             <p
-              style="width: 589px; flex: none; color: #1D0C00; font-size: 80px; font-family: FZLanTingHeiS-H-GB; line-height: 95px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
+              style="width: 589px; flex: none; color: #1D0C00; font-size: 80px; font-family: FZLanTingHeiS-EB-GB; line-height: 112px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
               靖远尕六美味羊羔肉(敦煌店)
             </p>
             <div
@@ -702,26 +631,23 @@ style="color: #FFFFFF; font-size: 24px; font-family: PingFang SC; text-align: ce
           </div>
         </div>
       </div>
-      <!-- 餐厅核心印象横向滑动区域 -->
-      <div id="slider-a" style="position: absolute; left: 0px; top: 603px; width: 750px; height: 560px; overflow: hidden; touch-action: pan-y; cursor: grab;">
-        <div id="slider-a-track" style="display: flex; gap: 16px; padding: 0 24px; height: 560px; will-change: transform; transition: transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);">
       <div
-        style="width: 560px; height: 560px; flex: none; flex-shrink: 0; position: relative; mix-blend-mode: pass-through">
+        style="width: 560px; height: 560px; flex: none; position: absolute; left: 24px; top: 603px; mix-blend-mode: pass-through">
         <div
-          style="width: 560px; height: 560px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through; overflow: hidden; border-radius: 24px;">
+          style="width: 560px; height: 560px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
           <div
-            style="width: 560px; height: 560px; flex: none; background: url(./asset/images/大方块图.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
+            style="width: 560px; height: 560px; flex: none; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0.53) 100%), url(./asset/images/b9052854122e4d8196f793bf88882c21.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
           <img
-src="./asset/images/Mask备份 10@2x.png"
-title="Mask备份 10"
+            src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+            title="Mask备份 10"
             style="flex: none; border-radius: 66.41px; position: absolute; left: 456px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 11@2x.png"
-title="Mask备份 11"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 11"
             style="flex: none; border-radius: 34.37px; position: absolute; left: 484px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 12"
             style="flex: none; border-style: solid; border-image: linear-gradient(226deg, #FFFFFF 0%, rgba(255,255,255,0) 55%, #FFFFFF 100%) 1.252960205078125 1.252960205078125 1.252960205078125 1.252960205078125; border-width: 1.25px; border-radius: 34.37px; position: absolute; left: 512px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
         </div>
         <div style="position: absolute; left: 4px; top: 408px">
@@ -743,22 +669,22 @@ title="Mask备份 12"
         </div>
       </div>
       <div
-        style="width: 560px; height: 560px; flex: none; flex-shrink: 0; position: relative; mix-blend-mode: pass-through">
+        style="width: 560px; height: 560px; flex: none; position: absolute; left: 600px; top: 603px; mix-blend-mode: pass-through">
         <div
-          style="width: 560px; height: 560px; flex: none; position: absolute; left: 0px; top: 0px; overflow: hidden; border-radius: 24px; mix-blend-mode: pass-through">
+          style="width: 560px; height: 560px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
           <div
-            style="width: 560px; height: 560px; flex: none; background: url(./asset/images/大方块图2.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
+            style="width: 560px; height: 560px; flex: none; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0.53) 100%), url(./asset/images/39003fbf104bbe24f9e808c7638ebeca.png); background-size: cover; background-position: center; border-radius: 24px; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through"></div>
           <img
-src="./asset/images/Mask备份 10@2x.png"
-title="Mask备份 10"
+            src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+            title="Mask备份 10"
             style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1.25px; border-radius: 66.41px; position: absolute; left: 456px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 11@2x.png"
-title="Mask备份 11"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 11"
             style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1.25px; border-radius: 34.37px; position: absolute; left: 484px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
+            src="./asset/images/291fed7182d69fc25d28e5c9736b3047.png"
+            title="Mask备份 12"
             style="flex: none; border-style: solid; border-color: #FFFFFF; border-width: 1.25px; border-radius: 34.37px; position: absolute; left: 512px; top: 404px; width: 40px; height: 40px; object-fit: cover; mix-blend-mode: pass-through" />
         </div>
         <div style="position: absolute; left: 4px; top: 408px">
@@ -782,8 +708,6 @@ title="Mask备份 12"
           </span>
         </div>
       </div>
-        </div><!-- end slider-a-track -->
-      </div><!-- end slider-a -->
       <div
         style="width: 702px; height: 350px; flex: none; position: absolute; left: 24px; top: 2098px; mix-blend-mode: pass-through">
         <div
@@ -803,27 +727,32 @@ title="Mask备份 12"
             &quot;这个氛围感绝了&quot;
           </span>
         </div>
-        <img
-          src="./asset/images/服务与环境-环境部分配图.png"
-          title="环境配图"
-          style="position: absolute; right: -10px; top: -60px; width: 420px; height: 420px; object-fit: contain; object-position: right center; mix-blend-mode: pass-through" />
+        <div
+          style="width: 382.04px; height: 344.9px; flex: none; position: absolute; left: 311px; top: 0px; mix-blend-mode: pass-through">
+          <img
+            src="./asset/images/46c3a07d2e54c5c72875e81d8dd96291.jpeg"
+            title="矩形 12373"
+            style="flex: none; border-radius: 16px; position: absolute; transform: rotate(10deg); transform-origin: 0 0; left: 151.93px; top: 73px; width: 233.67px; height: 234.9px; object-fit: cover; mix-blend-mode: pass-through" />
+          <div
+            style="width: 300px; height: 300px; flex: none; background: url(./asset/images/db99b34963df73407e3e7bae175d7bde.png), url(https://image-resource.mastergo.com/135669247116064/138376242638894/33ce246dc3aa047bcb855a919be1e5c5.PNG), linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%); background-size: cover; background-position: center; border-radius: 16px; position: absolute; transform: rotate(-8.46deg); transform-origin: 0 0; left: 0px; top: 44.14px; mix-blend-mode: pass-through"></div>
+        </div>
       </div>
       <div
         style="width: 64px; height: 32px; flex: none; position: absolute; left: 56px; top: 2383px; mix-blend-mode: pass-through">
         <div
           style="width: 32px; height: 32px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
           <img
-            src="./asset/images/Mask备份 10@2x.png"
+            src="./asset/images/bc99d0926c0937b017c6a74e357ae326.png"
             title="Mask备份 10"
             style="flex: none; border-radius: 53px; position: absolute; left: 0px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
         </div>
         <img
-          src="./asset/images/Mask备份 11@2x.png"
+          src="./asset/images/ce9dd2ca2b6940e16d7f6651a7b788d3.png"
           title="Mask备份 11"
           style="flex: none; border-radius: 27.43px; position: absolute; left: 16px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
         <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
+          src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+          title="Mask备份 12"
           style="flex: none; border-radius: 53px; position: absolute; left: 32px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
       </div>
       <span
@@ -839,17 +768,17 @@ title="Mask备份 12"
           <div
             style="width: 32px; height: 32px; flex: none; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
             <img
-              src="./asset/images/Mask备份 10@2x.png"
+              src="./asset/images/bc99d0926c0937b017c6a74e357ae326.png"
               title="Mask备份 10"
               style="flex: none; border-radius: 53px; position: absolute; left: 0px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
           </div>
           <img
-            src="./asset/images/Mask备份 11@2x.png"
+            src="./asset/images/ce9dd2ca2b6940e16d7f6651a7b788d3.png"
             title="Mask备份 11"
             style="flex: none; border-radius: 27.43px; position: absolute; left: 16px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
           <img
-src="./asset/images/Mask备份 12@1x.png"
-title="Mask备份 12"
+            src="./asset/images/008e43e4a4bfc16f94f203217f407c52.png"
+            title="Mask备份 12"
             style="flex: none; border-radius: 53px; position: absolute; left: 32px; top: 0px; width: 32px; height: 32px; object-fit: cover; mix-blend-mode: pass-through" />
         </div>
         <span
@@ -919,158 +848,11 @@ title="Mask备份 12"
             顶级服务
           </span>
           <span
-            style="color: #FFFFFF; font-size: 32px; font-family: Yozai; font-weight: 700; line-height: 38px; position: absolute; left: 0px; top: 83px; mix-blend-mode: pass-through; white-space: nowrap">
+            style="color: #FFFFFF; font-size: 32px; font-family: Yozai; font-weight: 700; line-height: 38px; position: absolute; left: 0px; top: 83px; mix-blend-mode: pass-through">
             &quot;每桌都有服务人员&quot;
           </span>
         </div>
       </div>
     </div>
-    </div><!-- end mobile-wrapper -->
-    <script>
-      // 750px 设计稿 scale(0.5) 后 = 375px
-      // 需要给 #mobile-wrapper 设置正确高度（scale 后内容只占原来一半高）
-      function fixWrapperHeight() {
-        var content = document.getElementById('main-content');
-        var wrapper = document.getElementById('mobile-wrapper');
-        if (!content || !wrapper) return;
-
-        // 动态计算 scale：wrapper 实际宽度 / 750px 设计稿宽度
-        var scale = wrapper.offsetWidth / 750;
-
-        // 先临时移除 scale，测量真实高度
-        content.style.transform = 'none';
-        content.style.height = 'auto';
-        content.style.overflow = 'visible';
-
-        // 用递归找最大子元素底部
-        var maxH = 0;
-        (function walk(el) {
-          var cs = window.getComputedStyle(el);
-          if (cs.position === 'absolute' || cs.position === 'relative') {
-            var b = el.offsetTop + el.offsetHeight;
-            if (b > maxH) maxH = b;
-          }
-          for (var i = 0; i < el.children.length; i++) walk(el.children[i]);
-        })(content);
-        if (maxH < 100) maxH = content.scrollHeight;
-
-        // 恢复动态 scale
-        content.style.height = maxH + 'px';
-        content.style.overflow = 'clip';
-        content.style.transform = 'scale(' + scale + ')';
-
-        // wrapper 高度 = 内容真实高度 × scale + 底部余量（60px 视觉空白）
-        var bottomPadding = 60;
-        wrapper.style.height = (maxH * scale + bottomPadding) + 'px';
-      }
-
-      document.addEventListener('DOMContentLoaded', fixWrapperHeight);
-      window.addEventListener('load', fixWrapperHeight);
-      // 横屏/竖屏切换时重新计算
-      window.addEventListener('resize', fixWrapperHeight);
-    </script>
-    <script>
-      // 横向跟手滑动 + 微弹性回弹
-      function initSlider(wrapperId, trackId) {
-        var wrapper = document.getElementById(wrapperId);
-        var track   = document.getElementById(trackId);
-        if (!wrapper || !track) return;
-
-        var startX = 0, startOff = 0, curOff = 0;
-        var isDragging = false;
-        var velX = 0, lastX = 0, lastT = 0;
-        var raf = null;
-
-        // 计算最大可滑动距离
-        function getMaxOff() {
-          var ww = wrapper.offsetWidth;                        // 750
-          var tw = track.scrollWidth + 48 /* padding×2 */;    // 两卡片 + gap + padding
-          // 注意：track 自带 padding 0 24px，gap 已包含在 scrollWidth
-          var maxOff = Math.max(0, track.scrollWidth - ww);
-          return maxOff;
-        }
-
-        function setOff(x, animate) {
-          if (animate) {
-            track.style.transition = 'transform 0.38s cubic-bezier(0.25,0.46,0.45,0.94)';
-          } else {
-            track.style.transition = 'none';
-          }
-          track.style.transform = 'translateX(' + (-x) + 'px)';
-          curOff = x;
-        }
-
-        // 弹性边界计算（超出边界时阻尼）
-        function rubberBand(off) {
-          var max = getMaxOff();
-          if (off < 0) return off * 0.3;
-          if (off > max) return max + (off - max) * 0.3;
-          return off;
-        }
-
-        function clamp(off) {
-          var max = getMaxOff();
-          return Math.max(0, Math.min(max, off));
-        }
-
-        function onDown(e) {
-          isDragging = true;
-          startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
-          startOff = curOff;
-          velX = 0; lastX = startX; lastT = Date.now();
-          track.style.transition = 'none';
-          wrapper.style.cursor = 'grabbing';
-          if (raf) { cancelAnimationFrame(raf); raf = null; }
-        }
-
-        function onMove(e) {
-          if (!isDragging) return;
-          var cx = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-          // 仅在 main-content scale(0.5) 情况下，实际位移需 ÷ 0.5 = ×2
-          var scale = document.getElementById('mobile-wrapper').offsetWidth / 750;
-          var dx = (cx - startX) / scale;
-          var rawOff = startOff - dx;
-          setOff(rubberBand(rawOff), false);
-
-          // 计算速度
-          var now = Date.now();
-          var dt = now - lastT;
-          if (dt > 0) velX = (cx - lastX) / dt;
-          lastX = cx; lastT = now;
-        }
-
-        function onUp() {
-          if (!isDragging) return;
-          isDragging = false;
-          wrapper.style.cursor = 'grab';
-
-          var max = getMaxOff();
-          var scale = document.getElementById('mobile-wrapper').offsetWidth / 750;
-          // 惯性：speed (px/ms) → 投影到内容坐标
-          var momentum = -(velX / scale) * 180;
-          var target = clamp(curOff + momentum);
-
-          setOff(target, true);
-        }
-
-        // Touch
-        wrapper.addEventListener('touchstart', onDown, { passive: true });
-        wrapper.addEventListener('touchmove',  onMove, { passive: true });
-        wrapper.addEventListener('touchend',   onUp);
-        // Mouse
-        wrapper.addEventListener('mousedown',  onDown);
-        document.addEventListener('mousemove', onMove);
-        document.addEventListener('mouseup',   onUp);
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
-        initSlider('slider-a', 'slider-a-track');
-        initSlider('slider-b', 'slider-b-track');
-      });
-      window.addEventListener('load', function() {
-        initSlider('slider-a', 'slider-a-track');
-        initSlider('slider-b', 'slider-b-track');
-      });
-    </script>
   </body>
 </html>
