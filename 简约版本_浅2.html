@@ -227,10 +227,10 @@
       <div
         id="top-bar-wrapper"
         style="width: 750px; display: flex; justify-content: flex-start; align-items: flex-start; flex-direction: column; position: absolute; left: 0px; top: 0px; mix-blend-mode: pass-through">
-        <!-- 状态栏行：微信WebView强制0，其他环境使用safe-area-inset-top -->
+        <!-- 状态栏行：默认高度0，仅iOS添加到主屏幕全屏时才撑开安全区高度 -->
         <div
           id="status-bar-row"
-          style="width: 750px; height: env(safe-area-inset-top, 0px); flex: none; mix-blend-mode: pass-through; position: relative; overflow: hidden">
+          style="width: 750px; height: 0; flex: none; mix-blend-mode: pass-through; position: relative; overflow: hidden">
           <!-- 仅用高度占位，系统真实状态栏显示在上方 -->
         </div>
         <!-- 导航栏行：过程稿在右侧 -->
@@ -264,11 +264,13 @@
       <script>
         (function() {
           var statusRow = document.getElementById('status-bar-row');
-          // 微信WebView检测：UA含MicroMessenger则直接高度=0，消除微信异常safe-area值
-          if (/MicroMessenger/i.test(navigator.userAgent)) {
+          // 仅在 iOS 添加到主屏幕全屏（standalone）时撑开安全区
+          // 微信/Safari带地址栏/普通浏览器 → 全部保持 height:0
+          if (window.navigator.standalone === true) {
+            statusRow.style.height = 'env(safe-area-inset-top, 0px)';
+          } else {
             statusRow.style.height = '0';
           }
-          // 其他环境保持CSS env(safe-area-inset-top, 0px)，无需额外处理
         })();
       </script>
       <div
